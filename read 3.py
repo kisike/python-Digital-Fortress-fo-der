@@ -13,8 +13,8 @@ elif response == "b":
     print  ("you are a female")
 else :
     print  ("prefer not to mention") 
-password_1 = str,int (input("pass_word_1  " ))
-password_2 = str,int (input ("pass_word_2   "))
+password_1 = str (input("pass_word_1  " ))
+password_2 = str (input ("pass_word_2   "))
 if password_1 == password_2:
     pass
 else:

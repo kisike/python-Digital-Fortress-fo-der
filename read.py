@@ -4,10 +4,9 @@ print("our company charges 10% of your total purchase as tip")
 tip = 1/10*total_purchase
 total_cost = tip + total_purchase
 print ( "are you making a singular payment or joint payment")
-print ("(a) singular payment")
-print ("(b) joint payment")
-response = input ("response  " )
-if response == "a":
+print ("(a).singular_payment, \n (b).joint_payment")
+response = (input ("response   " )). lower ()
+if response == "a" :
     print(total_cost)
     print("thanks for coming💕")
 elif response == "b":
