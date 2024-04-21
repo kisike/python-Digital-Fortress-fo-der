@@ -1,1 +1,19 @@
 Welcome to digigital fortress
+import requests
+
+# URL of the webpage containing the data
+url = "https://example.com/data.txt"  # Replace this with the actual URL
+
+# Fetch data from the URL
+response = requests.get(url)
+
+if response.status_code == 200:  # Check if the request was successful
+    # Split the content of the webpage into lines
+    lines = response.text.split("\n")
+    
+    # Split each line into words and print them
+    for line in lines:
+        words = line.split()
+        print(words)
+else:
+    print("Failed to fetch data from the URL. Status code:", response.status_code)
