@@ -1,0 +1,60 @@
+def greeting():
+    print("good morning")
+greeting() 
+
+def tunde (x,y):
+    return x+y
+print(tunde (20,5))
+
+#lambda
+chisom= lambda x:x*x
+print(chisom(20))
+
+num=[10,34,25,16,18,19,22,24]
+print(list(filter(lambda x: x%2==0, num)))
+print(list(map(lambda x: x**2, num)))
+print(list(map (lambda x: x*2, num)))
+
+num.sort()
+print(num)
+
+def fex (x):
+    print(20*x)
+fex(2)
+
+def my_average(x):
+    return sum(x) / len(x)
+print(my_average([10,20]))
+
+tunde=list()
+show=lambda tunde:sum(tunde)/len (tunde)
+print(show([1,2,3,4,5]))
+
+def mu_prime(x):
+    if x<2:
+        return False
+    for i in range(2, int (x ** 0.5) + 1):
+        if x% i==0:
+            return False
+        else:
+               return True
+print (mu_prime(97))
+
+def word(x):
+    write="aeiouAEIOU"
+    tunde=0
+    
+    for i in write:
+        if i in x:
+            tunde +=1
+    return tunde
+print(word("ric"))
+
+
+    
+
+#def bee(x):
+ #   return x % 2==0
+#print (bee([2,5,8,4]))
+
+ 
